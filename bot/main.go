@@ -14,14 +14,6 @@ import (
 	"bytes"
 
 )
-type pendingSudoCommand struct {
-	chatID   int64
-	command  string
-	password chan string
-	mutex    sync.Mutex
-}
-
-var pendingCommands = make(map[int64]*pendingSudoCommand)
 
 func main() {
 
