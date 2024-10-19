@@ -1,3 +1,4 @@
 .env
 log/
 bot.log
+config.json
